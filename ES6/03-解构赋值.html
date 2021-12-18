@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //数组解构
+        //传统的方法
+        let a=1,b=2,c=3
+        console.log(a,b,c)
+
+        //ES6
+        let [x,y,z]=[1,2,3]
+        console.log(x,y,z)
+
+        //对象解构
+        let user={name:"eugeneli",age:24}
+        //传统
+        let name1=user.name
+        let age1=user.age
+
+        //ES6
+        let {name,age}=user //注意：解构的变量必须是user中的属性
+        console.log(name,age)
+ 
+    </script>
+
+</body>
+</html>
