@@ -61,9 +61,9 @@ export const constantRouterMap = [
       {
         path: 'edit/:id',
         name: '获取医院设置',
-        component: () => import('@/views/hospset/add'),
+        component: () => import('@/views/hospset/add'),//路由所跳转对应的页面
         meta: { title: '编辑', noCache: 'true' },
-        hidden:true
+        hidden:true//这是一个隐藏路由 没有在前端页面中显示出来
       },
       
     ]

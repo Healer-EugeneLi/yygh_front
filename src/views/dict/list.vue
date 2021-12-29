@@ -34,11 +34,13 @@
                         {{ row.dictCode }}
                 </template>
             </el-table-column>
+
             <el-table-column label="值" width="230" align="left">
                 <template slot-scope="scope">
                 <span>{{ scope.row.value }}</span>
             </template>
             </el-table-column>
+
             <el-table-column label="创建时间" align="center">
                 <template slot-scope="scope">
                 <span>{{ scope.row.createTime }}</span>

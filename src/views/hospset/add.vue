@@ -38,6 +38,8 @@ export default {
     },
 
     created(){
+        //获取路由的id值
+        //判断 如果路由中有参数 并且有id参数 也就是如果是修改的话 先进行数据的回显
          if(this.$route.params&&this.$route.params.id){
             const id=this.$route.params.id
 
@@ -92,6 +94,7 @@ export default {
 
             hospset.getHospSet(id).then(response=>{
                 this.hospitalSet=response.data
+                //后端中直接在返回的包装类 将整个hospitalSet放进去  所以这边得到的话直接从data中进行获取
             })
         }
     
